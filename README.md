@@ -19,3 +19,11 @@ yarn build
 ```
 yarn lint
 ```
+
+## Beauty Of Vue js
+- It works by giving you all these powers without you having to worry to update the DOM yourself.
+- The Data Object,
+- Declarative Rendering,
+- powerful Directives like v-if
+- Event driven things like click
+- Reactive system
