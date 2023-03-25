@@ -2,7 +2,7 @@
     <div class="songlist list-group">
 
     <div class="song list-group-item list-group-item-action d-flex"
-     v-for="(song, index) in songs" :key="index">
+     v-for="(song, index) in songs" :key="index" :class="{active : (currentSong !== null && currentSong==song)}">
         <font-awesome-icon class="trash mr-3 align-self-center" icon="trash" @click="$emit('handleDelete',song)" />
         <div class="thumbnail" :style="{backgroundImage: 'url('+song.thumb+')'}">
         </div>
