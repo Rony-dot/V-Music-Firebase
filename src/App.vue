@@ -2,7 +2,7 @@
   <div id="app" class="container">
     <h1 class="text-primary mt-3">{{name}}</h1>
     <current-song :song="currentSong"  v-if="currentSong" />
-    <song-list :songs="songs" :currentSong="currentSong" @handlePlay="handlePlay"/>
+    <song-list :songs="songs" :currentSong="currentSong" @handlePlay="handlePlay" @handleDelete="handleDelete"/>
   </div>
 </template>
 
@@ -10,6 +10,7 @@
 
 import CurrentSong from "@/components/CurrentSong.vue"
 import SongList from "@/components/SongList.vue"
+import _ from "lodash"
 export default {
   name: 'App',
   data() {
@@ -154,6 +155,10 @@ export default {
         this.audioElement = null;
       })
       },
+    handleDelete: function(payload){
+      const updatedArray = _.without(this.songs,payload);
+      this.songs = updatedArray;
+    }
   },
   components: {
     CurrentSong,
