@@ -218,5 +218,3 @@ $list-group-action-color: #bbb;
 // @import "node_modules/bootstrap/scss/bootstrap.scss";
 </style>
 
-// yarn add sass
-// yarn add sass-loader

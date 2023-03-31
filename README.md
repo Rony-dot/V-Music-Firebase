@@ -27,3 +27,13 @@ yarn lint
 - powerful Directives like v-if
 - Event driven things like click
 - Reactive system
+
+
+```vue
+yarn add @fortawesome/fontawesome-free @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/vue-fontawesome bootstrap jquery popper.js lodash
+yarn add sass
+yarn add sass-loader
+yarn add axios
+yarn add vuex
+
+```
